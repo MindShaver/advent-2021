@@ -32,3 +32,11 @@ E:\Repositories\advent-2021\Advent2021\obj\Debug\netcoreapp3.1\Advent2021.Assemb
 E:\Repositories\advent-2021\Advent2021\obj\Debug\netcoreapp3.1\Advent2021.csproj.CoreCompileInputs.cache
 E:\Repositories\advent-2021\Advent2021\obj\Debug\netcoreapp3.1\Advent2021.dll
 E:\Repositories\advent-2021\Advent2021\obj\Debug\netcoreapp3.1\Advent2021.pdb
+E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Advent2021.exe
+E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Solvers\DayOne\dayOneInput.txt
+E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Advent2021.deps.json
+E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Advent2021.runtimeconfig.json
+E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Advent2021.runtimeconfig.dev.json
+E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Advent2021.dll
+E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Advent2021.pdb
+E:\Repositories\advent-2021\Advent2021\obj\Debug\netcoreapp3.1\Advent2021.genruntimeconfig.cache
