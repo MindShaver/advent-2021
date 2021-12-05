@@ -9,6 +9,9 @@
     <None Update="Solvers\DayOne\dayOneInput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Solvers\DayTwo\dayTwoInput.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
 ﻿using Advent2021.Interfaces;
 using Advent2021.Solvers;
+using Advent2021.Solvers.DayTwo;
 using Advent2021.Utilities;
 using System;
 
@@ -31,6 +32,14 @@ namespace Advent2021
                             {
                                 validDay = true;
                                 solver = new DayOneSolver(fileReader, format);
+                                SolveParts(solver);
+
+                                break;
+                            }
+                        case 2:
+                            {
+                                validDay = true;
+                                solver = new DayTwoSolver(fileReader, format);
                                 SolveParts(solver);
 
                                 break;
