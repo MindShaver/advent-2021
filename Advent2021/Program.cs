@@ -25,27 +25,37 @@ namespace Advent2021
                 {
                     var parsedDay = Int32.Parse(day);
 
-                    switch(parsedDay)
+                    switch (parsedDay)
                     {
-                        case 1: {
+                        case 1:
+                            {
                                 validDay = true;
                                 solver = new DayOneSolver(fileReader, format);
-                                solver.SolveDayOne();
+                                SolveParts(solver);
+
                                 break;
                             }
-                        default: {
+                        default:
+                            {
                                 validDay = false;
                                 break;
                             }
                     }
-                } catch(Exception e)
+                }
+                catch (Exception e)
                 {
                     format.CenterText($"Error {e.Message}");
                     format.Header("Advent of Code 2021", "Please enter the day you want to solve.");
-
                 }
             }
 
+            static void SolveParts(ISolver solver)
+            {
+                solver.InitializeData();
+                solver.SolveDayOne();
+                solver.InitializeData();
+                solver.SolveDayTwo();
+            }
         }
     }
 }

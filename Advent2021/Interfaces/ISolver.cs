@@ -4,5 +4,7 @@
     {
         public void SolveDayOne();
         public void SolveDayTwo();
+
+        abstract void InitializeData();
     }
 }

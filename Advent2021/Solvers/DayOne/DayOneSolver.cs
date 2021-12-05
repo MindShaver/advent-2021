@@ -10,7 +10,7 @@ namespace Advent2021.Solvers
     {
         private InputReader _inputReader;
         private Format _formatter;
-        private string inputPath = "Solvers/dayOneInput.txt";
+        private string inputPath = "Solvers/DayOne/dayOneInput.txt";
         private IEnumerable<string> _input;
         private int _previousMeasurement;
         private int _higherMeasurementCount;
@@ -20,23 +20,20 @@ namespace Advent2021.Solvers
         {
             _inputReader = reader;
             _formatter = formatter;
-            _firstMeasurement = true;
-            _higherMeasurementCount = 0;
         }
 
         public void SolveDayOne()
         {
-            _input = _inputReader.ReadLine(inputPath).ToArray();
-
             foreach (var depth in _input)
             {
                 var parsedDepth = Int32.Parse(depth);
 
-                if(_firstMeasurement)
+                if (_firstMeasurement)
                 {
                     _previousMeasurement = parsedDepth;
                     _firstMeasurement = false;
-                } else
+                }
+                else
                 {
                     ChartDepth(parsedDepth);
                 }
@@ -48,12 +45,31 @@ namespace Advent2021.Solvers
 
         public void SolveDayTwo()
         {
-            throw new NotImplementedException();
+            var inputArray = _input.ToArray();
+
+            for (var i = 0; i < inputArray.Length - 2; i++)
+            {
+                var windowOne = Int32.Parse(inputArray[i]);
+                var windowTwo = Int32.Parse(inputArray[i + 1]);
+                var windowThree = Int32.Parse(inputArray[i + 2]);
+
+                ChartDepth(windowOne + windowTwo + windowThree);
+            };
+
+            _formatter.Header("Part One", _formatter.CenterText($"The total number of times Depth increased = {_higherMeasurementCount}"));
+            Console.ReadKey();
+        }
+
+        public void InitializeData()
+        {
+            _input = _inputReader.ReadLine(inputPath);
+            _higherMeasurementCount = 0;
+            _firstMeasurement = true;
         }
 
         private void ChartDepth(int depth)
         {
-            if(depth > _previousMeasurement)
+            if (depth > _previousMeasurement)
             {
                 _higherMeasurementCount++;
             }

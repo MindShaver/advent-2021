@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Repositories\\AdventOfCode2021\\Advent2021\\Advent2021.csproj",
+      "projectUniqueName": "E:\\Repositories\\advent-2021\\Advent2021\\Advent2021.csproj",
       "projectName": "Advent2021",
-      "projectPath": "E:\\Repositories\\AdventOfCode2021\\Advent2021\\Advent2021.csproj",
+      "projectPath": "E:\\Repositories\\advent-2021\\Advent2021\\Advent2021.csproj",
       "packagesPath": "C:\\Users\\minds\\.nuget\\packages\\",
-      "outputPath": "E:\\Repositories\\AdventOfCode2021\\Advent2021\\obj\\",
+      "outputPath": "E:\\Repositories\\advent-2021\\Advent2021\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
