@@ -1,5 +1,6 @@
 ﻿using Advent2021.Interfaces;
 using Advent2021.Solvers;
+using Advent2021.Solvers.DayThree;
 using Advent2021.Solvers.DayTwo;
 using Advent2021.Utilities;
 using System;
@@ -16,12 +17,10 @@ namespace Advent2021
             var fileReader = new InputReader();
 
             format.Header("Advent of Code 2021", "Please enter the day you want to solve.");
-
             var day = Console.ReadLine();
 
             while (!validDay)
             {
-
                 try
                 {
                     var parsedDay = Int32.Parse(day);
@@ -40,6 +39,14 @@ namespace Advent2021
                             {
                                 validDay = true;
                                 solver = new DayTwoSolver(fileReader, format);
+                                SolveParts(solver);
+
+                                break;
+                            }
+                        case 3:
+                            {
+                                validDay = true;
+                                solver = new DayThreeSolver(fileReader, format);
                                 SolveParts(solver);
 
                                 break;

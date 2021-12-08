@@ -41,3 +41,4 @@ E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Advent2021.dll
 E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Advent2021.pdb
 E:\Repositories\advent-2021\Advent2021\obj\Debug\netcoreapp3.1\Advent2021.genruntimeconfig.cache
 E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Solvers\DayTwo\dayTwoInput.txt
+E:\Repositories\advent-2021\Advent2021\bin\Debug\netcoreapp3.1\Solvers\DayThree\dayThreeInput.txt
