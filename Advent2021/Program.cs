@@ -1,5 +1,6 @@
 ﻿using Advent2021.Interfaces;
 using Advent2021.Solvers;
+using Advent2021.Solvers.DayFour;
 using Advent2021.Solvers.DayThree;
 using Advent2021.Solvers.DayTwo;
 using Advent2021.Utilities;
@@ -47,6 +48,14 @@ namespace Advent2021
                             {
                                 validDay = true;
                                 solver = new DayThreeSolver(fileReader, format);
+                                SolveParts(solver);
+
+                                break;
+                            }
+                        case 4:
+                            {
+                                validDay = true;
+                                solver = new DayFourSolver(fileReader, format);
                                 SolveParts(solver);
 
                                 break;
